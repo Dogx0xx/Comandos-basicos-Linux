@@ -1,0 +1,36 @@
+Introdução ao terminal Linux:
+
+# -> usuario root
+$ -> usuario nominal
+
+mkdir -> cria diretorio
+
+ls -> lista os arquivos e pastas do local onde o usuario se encontra no sistema
+
+> teste -> cria arquivo
+
+touch teste -> cria arquivo 
+
+touch .teste -> cria arquivo teste oculto no sistema
+
+man -> mostra uma introdução sobre o comando desejado
+
+echo teste > teste -> escreve teste dentro do arquivo teste
+
+cat teste -> mostra o conteudo dentro do arquivo
+
+echo teste >> teste -> adiciona um conteudo alem do que ja tem no arquivo
+
+tac teste -> exibe de traz para frente o conteudo do arquivo
+
+cp teste teste2 -> faz uma copia identica do arquivo teste para teste2
+
+mv teste2 ../ -> move o arquivo para um diretorio anterior
+
+head -n1 teste -> mostra a primeira linha do arquivo
+
+tail -n1 teste -> mostra a ultima linha do arquivo
+
+tail -f teste -> visualizamos o arquivo sendo editado em tempo real
+
+rm -rf -> exclui o diretorio/arquivos que queremos deletar
