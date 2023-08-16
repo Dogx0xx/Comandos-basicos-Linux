@@ -1,0 +1,18 @@
+Comandos:
+
+nano nome_do_arquivo.txt
+	- crtl k -> copia
+	- ctrl u -> cola
+	- ctrl x -> sai
+	- ctrl w -> search
+vi nome_do_arquivo.txt
+	- i -> inserir dados
+	- esc -> volta
+	- dd -> deleta a linha
+	- esc / -> search
+	- esc :wq -> sai e salva
+	- esc :q! -> sai sem salvar
+gedit nome_do_arquivo
+
+leafpad nome_do_arquivo
+	- search / replace -> subistitui o que quiser por outra coisa

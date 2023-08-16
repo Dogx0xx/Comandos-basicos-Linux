@@ -1,0 +1,20 @@
+Comandos:
+
+netstat -nlpt -> identificar portas abertas
+
+service ssh start -> serviço de ssh ativado
+
+service apache2 start -> serviço apache(http) ativado
+
+firefox localhost -> abre a pagina localhost no firefox pelo terminal
+
+service apache2 stop -> para o serviço apache(http)
+
+service mysql start -> ativa o serviço mysql
+
+service mysql stop -> para o serviço do myql
+
+update-rc.d shh enable -> habilita o ssh para iniciar com o sistema
+
+update-rc.d shh disable -> desabilita o ssh para iniciar com o sistema
+

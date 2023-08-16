@@ -1,0 +1,22 @@
+Comandos:
+
+# -> usuario root
+$ -> usuario nominal
+
+adduser -> adiciona um usuario novo (automaticamente)
+
+/etc/passwd -> contem todos os usuarios do sistema
+
+deluser -> deleta o usuario desejado (automaticamente)
+
+useradd -d /opt/teste -s /bin/bash usuario -> adiciona o usuario manualmente sem senha configurada
+
+passwd usuario -> define a senha do usuario desejado
+
+su usuario -> loga com o usuario desejado no terminal
+
+adduser usuario grupo -> adiciona o usuario a um grupo qualquer
+
+/etc/sudoers -> adicionar privilegios aos usuarios desejados
+
+/var/log/auth.log -> mostra tudo feito no sistema pelos usuarios

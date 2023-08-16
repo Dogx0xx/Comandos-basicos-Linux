@@ -1,0 +1,148 @@
+COmandos:
+
+# -> usuario root
+$ -> usuario nominal
+
+adduser -> adiciona um usuario novo (automaticamente)
+
+/etc/passwd -> contem todos os usuarios do sistema
+
+deluser -> deleta o usuario desejado (automaticamente)
+
+useradd -d /opt/teste -s /bin/bash usuario -> adiciona o usuario manualmente sem senha configurada
+
+passwd usuario -> define a senha do usuario desejado
+
+su usuario -> loga com o usuario desejado no terminal
+
+adduser usuario grupo -> adiciona o usuario a um grupo qualquer
+
+/etc/sudoers -> adicionar privilegios aos usuarios desejados
+
+/var/log/auth.log -> mostra tudo feito no sistema pelos usuarios
+
+ifconfig -> mostra as configurações das placas de rede
+
+ifconfig eth0 ip netmask ip -> altera ip e mascara
+
+/etc/network/interfaces -> interfaces de redes configuradas
+-------------------------------------------------------------
+auto eth0
+iface eth0 inet dhcp -> configura eth0 automatico com dhcp
+-------------------------------------------------------------
+auto eth0
+iface eth0 inet static
+address IP
+netmask IP -> configura eth0 estatico (ip fixo)
+-------------------------------------------------------------
+service network restart -> restarta o serviço de rede
+
+service networking restart -> reinicia o adaptador de rede
+
+/etc/init.d/networking restart -> reinicia o adaptador de rede
+
+dhclient eth0 ->
+
+route del default -> deleta a rota default da tabela de roteamento
+
+route -n -> mostra as rotas configuradas
+
+route add default gw ip-moden
+
+netstat -lt -> portas listen tcp
+
+netstat -lnpt -> mostra porta e serviço rodando
+
+service ssh start -> inicia o serviço ssh
+
+nano nome_do_arquivo.txt
+	- crtl k -> copia
+	- ctrl u -> cola
+	- ctrl x -> sai
+	- ctrl w -> search
+vi nome_do_arquivo.txt
+	- i -> inserir dados
+	- esc -> volta
+	- dd -> deleta a linha
+	- esc / -> search
+	- esc :wq -> sai e salva
+	- esc :q! -> sai sem salvar
+gedit nome_do_arquivo
+
+leafpad nome_do_arquivo
+	- search / replace -> subistitui o que quiser por outra coisa
+
+/etc/apt/source.list -> repositorios do sistema para instalar os pacotes do sistema
+	- buscar repositorio atual no site do kali
+
+locate accesss.log -> localiza o arquivo access.log no sistema
+
+locate sshd_config -> localiza o arquivo ssh_config no sistema
+
+updatedb -> atualiza o banco do comando locate
+
+whereis nmap -> mostra a localização de configuração e binario
+
+which nmap -> mostra o local do binario do nmap
+
+find /root/ -name desec -> procura dentro do diretorio root o arquivo desec
+
+netstat -nlpt -> identificar portas abertas
+
+service ssh start -> serviço de ssh ativado
+
+service apache2 start -> serviço apache(http) ativado
+
+firefox localhost -> abre a pagina localhost no firefox pelo terminal
+
+service apache2 stop -> para o serviço apache(http)
+
+service mysql start -> ativa o serviço mysql
+
+service mysql stop -> para o serviço do myql
+
+update-rc.d shh enable -> habilita o ssh para iniciar com o sistema
+
+update-rc.d shh disable -> desabilita o ssh para iniciar com o sistema
+
+
+apt update -> mantem a lista de pacotes atualizadas
+
+apt upgrade -> atualiza todos os pacotes do sistema
+
+apt search php7 -> busca pacotes de instalação do php7
+
+apt remove nome_do_pacote -> remove o pacote
+
+dpkg -i arquivo.deb -> instalação de pacotes .deb
+
+dpkg -l -> lista os programas instalados no sistema
+
+gzip -9 nome_do_arquivo-* -> zipa to
+
+grep -> combina padroes
+
+cat /etc/passwd | grep "/bin/bash" -> imprime tudo que tiver /bin/bash
+
+grep "/bin/bash" /etc/passwd -> imprime tudo que tiver /bin/bash
+
+grep "/bin/bash" /etc/passwd > temshell -> joga tudo que tiver /bin/bash no arquivo temshell
+
+cat /etc/passwd | grep -v "nologin" -> nao traz as linhas que contem o nologin
+
+cat /etc/passwd | egrep -v "nologin|/bin/false" -> nao traz as linha nologin e /bin/false
+
+egrep "root|usuario" /etc/passwd -> traz as linhas que contem root e usuario
+
+awk -F : '{print $1}' /etc/passwd -> traz a primeira coluna do arquivo passwd
+
+awk -F : '{print $1":"$6}' /etc/passwd -> traz a primeira coluna do arquivo passwd
+
+cut -d : -f1 /etc/passwd -> traz a primeira coluna do arquivo passwd
+
+sed 's/EVE/FEV/' test.txt -> troca o eve por fev no arquivo txt
+
+du -sh | sort -n
+
+scp -p usuario:servidor:/caminho_do_arquivo .
+

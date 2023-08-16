@@ -1,0 +1,36 @@
+Comandos:
+
+ifconfig -> mostra as configurações das placas de rede
+
+ifconfig eth0 ip netmask ip -> altera ip e mascara
+
+/etc/network/interfaces -> interfaces de redes configuradas
+-------------------------------------------------------------
+auto eth0
+iface eth0 inet dhcp -> configura eth0 automatico com dhcp
+-------------------------------------------------------------
+auto eth0
+iface eth0 inet static
+address IP
+netmask IP -> configura eth0 estatico (ip fixo)
+-------------------------------------------------------------
+service network restart -> restarta o serviço de rede
+
+service networking restart -> reinicia o adaptador de rede
+
+/etc/init.d/networking restart -> reinicia o adaptador de rede
+
+dhclient eth0 ->
+
+route del default -> deleta a rota default da tabela de roteamento
+
+route -n -> mostra as rotas configuradas
+
+route add default gw ip-moden
+
+netstat -lt -> portas listen tcp
+
+netstat -lnpt -> mostra porta e serviço rodando
+
+service ssh start -> inicia o serviço ssh
+

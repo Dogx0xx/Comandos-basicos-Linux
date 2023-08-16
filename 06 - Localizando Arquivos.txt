@@ -1,0 +1,14 @@
+Comandos:
+
+locate accesss.log -> localiza o arquivo access.log no sistema
+
+locate sshd_config -> localiza o arquivo ssh_config no sistema
+
+updatedb -> atualiza o banco do comando locate
+
+whereis nmap -> mostra a localização de configuração e binario
+
+which nmap -> mostra o local do binario do nmap
+
+find /root/ -name desec -> procura dentro do diretorio root o arquivo desec
+

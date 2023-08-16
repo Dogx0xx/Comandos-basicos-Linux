@@ -1,0 +1,16 @@
+Comandos:
+
+/etc/apt/source.list -> repositorios do sistema para instalar os pacotes do sistema
+	- buscar repositorio atual no site do kali
+
+apt update -> mantem a lista de pacotes atualizadas
+
+apt upgrade -> atualiza todos os pacotes do sistema
+
+apt search php7 -> busca pacotes de instalação do php7
+
+apt remove nome_do_pacote -> remove o pacote
+
+dpkg -i arquivo.deb -> instalação de pacotes .deb
+
+dpkg -l -> lista os programas instalados no sistema
