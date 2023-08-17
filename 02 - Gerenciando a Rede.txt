@@ -10,9 +10,10 @@ auto eth0
 iface eth0 inet dhcp -> configura eth0 automatico com dhcp
 -------------------------------------------------------------
 auto eth0
-iface eth0 inet static
-address IP
-netmask IP -> configura eth0 estatico (ip fixo)
+iface eth0 inet static -> configuração de ip estatico/fixo
+address IP -> colocar ip necessário
+netmask IP -> colocar mascara de rede
+gateway ip_do_roteador -> configura o ip do roteador para que a maquina tenha comunicação com a rede
 -------------------------------------------------------------
 service network restart -> restarta o serviço de rede
 
@@ -20,17 +21,18 @@ service networking restart -> reinicia o adaptador de rede
 
 /etc/init.d/networking restart -> reinicia o adaptador de rede
 
-dhclient eth0 ->
+dhclient eth0 -> configura um endereço de ip automaticamente
 
 route del default -> deleta a rota default da tabela de roteamento
 
 route -n -> mostra as rotas configuradas
 
-route add default gw ip-moden
+route add default gw ip-moden -> configura rota default
 
 netstat -lt -> portas listen tcp
 
-netstat -lnpt -> mostra porta e serviço rodando
+netstat -lnpt -> mostra porta e serviço rodando TCP
+
+netstat -lu -> lista as portas UDP listen
 
 service ssh start -> inicia o serviço ssh
-
