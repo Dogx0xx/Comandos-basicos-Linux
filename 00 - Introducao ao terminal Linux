@@ -33,4 +33,4 @@ tail -n1 teste -> mostra a ultima linha do arquivo
 
 tail -f teste -> visualizamos o arquivo sendo editado em tempo real
 
-rm -rf -> exclui o diretorio/arquivos que queremos deletar
+rm -rf -> exclui o diretorio/arquivos que queremos deletar /  OBS: Utilizar este comando com muito cuidado pois pode deletar qq arquivo/diretorio do sistema se o usuario tiver a permissão necessária.
