@@ -1,0 +1,4 @@
+Comandos para inspeção
+lspci -> Mostra todos os dispositivos atualmente conectados ao barramento PCI -> estes dispositivos PCI podem ser um componente conectado à placa mãe, como um controlador de disco ou uma placa de expansão instalada em um slot PCI, como uma placa de video externa.
+
+lsusb -> Lista os dispositivos USB atualmente conectados à máquina, embora existam dispositivos USB para praticamente qualquer finalidade imaginável, ainterface USB é amplamente usada para conectar dispositivos de entrada, dispositivos apontadores e mídias de armazenamento removíveis.
