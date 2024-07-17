@@ -22,3 +22,4 @@ deluser usuario grupo -> deleta o usuario do grupo especifico
 /etc/sudoers -> adicionar privilegios aos usuarios desejados
 
 /var/log/auth.log -> mostra tudo feito no sistema pelos usuarios
+Exemplo: cat /var/log/auth.log | grep usuario -> irá buscar na log todas as ações do usuario
